@@ -25,7 +25,8 @@ const UserSchema = new mongoose.Schema({
   },
   profileImg: {
     type: String,
-    default: "https://res.cloudinary.com/dxxxkeonq/image/upload/v1705631570/website/xgolsvu8xejzsqj8jjku.jpg",
+    default:
+      "https://res.cloudinary.com/dxxxkeonq/image/upload/v1705631570/website/xgolsvu8xejzsqj8jjku.jpg",
   },
   createdAt: {
     type: Date,
@@ -36,21 +37,11 @@ const UserSchema = new mongoose.Schema({
     default: Date.now,
   },
 
-  isOnline: {
-    type: Boolean,
-    default: false,
-  },
-
-  isAdmin: {
-    type: Boolean,
-    default: false,
-  },
   password: {
     type: String,
     min: 8,
     max: 20,
   },
-
 });
 
 export default mongoose.model("User", UserSchema);
