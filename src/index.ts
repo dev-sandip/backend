@@ -5,12 +5,12 @@ const PORT = process.env.PORT || 4657;
 
 // app
 connectDB()
-    .then((res) => {
-        console.log("Connected to DB");
-        app.listen(PORT, () => {
-            console.log(`Server is running on port ${PORT}`);
-        });
-    })
-    .catch((err) => {
-        console.log(err);
+  .then((res) => {
+    console.log("Connected to DB");
+    app.listen(PORT, () => {
+      console.log(`Server is running on http://localhost:${PORT}`);
     });
+  })
+  .catch((err) => {
+    console.log(err);
+  });

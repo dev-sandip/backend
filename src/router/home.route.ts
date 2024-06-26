@@ -12,6 +12,8 @@ homeRouter.get("/", (req: Request, res: Response) => {
       age: 20,
       role: "Backend Developer",
       exprience: " 3 months",
+      apiStatus: "Active",
+      isHealthy: true,
     },
   });
 });
